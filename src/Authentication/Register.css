@@ -4,33 +4,33 @@ html, body {
   padding: 0;
 }
 
-/* Container for centering the form */
+
 .register-container {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  min-height: 100vh; /* Full viewport height */
+  justify-content: center; 
+  align-items: center; 
+  min-height: 100vh; 
   padding: 20px;
 }
 
-/* Form Container */
+
 form {
   display: flex;
   flex-direction: column;
   max-width: 450px;
-  margin: 0; /* Remove auto margin */
+  margin: 0; 
   padding: 30px;
-  background-color: #ffffff; /* Light Beige */
+  background-color: #ffffff; 
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   animation: fadeIn 0.5s ease-out;
   font-family: Arial, sans-serif;
-  width: 100%; /* Make form take up full width of the container */
-  box-sizing: border-box; /* Ensure padding is included in width */
+  width: 100%; 
+  box-sizing: border-box; 
 }
 
-/* Input Fields */
+
 input {
   margin-bottom: 20px;
   padding: 12px;
@@ -47,14 +47,14 @@ input::placeholder {
 }
 
 input:focus {
-  border-color: #003366; /* Navy Blue */
+  border-color: #003366; 
   outline: none;
   box-shadow: 0 0 6px rgba(0, 51, 102, 0.3); /* Navy Blue */
   transform: scale(1.02);
   animation: pulse 1s ease-in-out;
 }
 
-/* Submit Button */
+
 .register-btn {
   padding: 12px;
   background-color: #FF7F50; 
@@ -69,20 +69,20 @@ input:focus {
 }
 
 .register-btn:hover {
-  background-color: #e65c50; /* Slightly darker Coral */
+  background-color: #e65c50; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transform: translateY(-2px);
 }
 
 .register-btn:active {
-  background-color: #cc4a39; /* Even darker Coral */
+  background-color: #cc4a39; 
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   transform: translateY(1px);
 }
 
-/* Alert Messages */
+
 .alert {
-  color: #d9534f; /* Red for alerts */
+  color: #d9534f; 
   font-size: 14px;
   margin-top: -10px;
   margin-bottom: 20px;
@@ -99,7 +99,7 @@ input:focus {
   color: red;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
   .register-container {
     padding: 10px;
