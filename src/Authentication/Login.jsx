@@ -1,36 +1,36 @@
 import React, { useState, useEffect } from 'react';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../firebase-config';
-import { useAuth } from '../contexts/AuthContext'; // Import custom hook for auth context
-import { useNavigate, Link } from 'react-router-dom'; // Import Link
+import { useAuth } from '../contexts/AuthContext'; 
+import { useNavigate, Link } from 'react-router-dom'; 
 import './Login.css';
 
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
-  const [loading, setLoading] = useState(false); // State for loading
+  const [loading, setLoading] = useState(false); 
   const { isAuthenticated } = useAuth();
   const navigate = useNavigate();
 
   // Redirect if already authenticated
   useEffect(() => {
     if (isAuthenticated) {
-      navigate('/properties'); // Redirect to PropertyList or another route
+      navigate('/properties');
     }
   }, [isAuthenticated, navigate]);
 
   const handleLogin = async (e) => {
     e.preventDefault();
     setError('');
-    setLoading(true); // Start loading
+    setLoading(true); 
     try {
       await signInWithEmailAndPassword(auth, email, password);
-      navigate('/properties'); // Redirect to PropertyList after successful login
+      navigate('/properties'); 
     } catch (error) {
       handleFirebaseError(error);
     } finally {
-      setLoading(false); // Stop loading
+      setLoading(false); 
     }
   };
 
