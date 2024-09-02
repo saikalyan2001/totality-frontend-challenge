@@ -17,4 +17,4 @@ Additional Notes :
   JSON Data: The JSON file is used for property details, making it easy to update and manage property information without a backend database.
   Deployment: For deployment, I used the  Netlify, which offers efficient hosting and easy scaling.
 
-[click here](https://totality-rental-platform.netlify.app/)
+[link for website](https://totality-rental-platform.netlify.app/)
