@@ -1,0 +1,136 @@
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container for centering the form */
+.register-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  min-height: 100vh; /* Full viewport height */
+  padding: 20px;
+}
+
+/* Form Container */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+  margin: 0; /* Remove auto margin */
+  padding: 30px;
+  background-color: #ffffff; /* Light Beige */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-out;
+  font-family: Arial, sans-serif;
+  width: 100%; /* Make form take up full width of the container */
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+/* Input Fields */
+input {
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  line-height: 1.5;
+  transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+input::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+input:focus {
+  border-color: #003366; /* Navy Blue */
+  outline: none;
+  box-shadow: 0 0 6px rgba(0, 51, 102, 0.3); /* Navy Blue */
+  transform: scale(1.02);
+  animation: pulse 1s ease-in-out;
+}
+
+/* Submit Button */
+.register-btn {
+  padding: 12px;
+  background-color: #FF7F50; 
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  line-height: 1.5;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.2s;
+  animation: pulse 1s ease-in-out;
+}
+
+.register-btn:hover {
+  background-color: #e65c50; /* Slightly darker Coral */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.register-btn:active {
+  background-color: #cc4a39; /* Even darker Coral */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transform: translateY(1px);
+}
+
+/* Alert Messages */
+.alert {
+  color: #d9534f; /* Red for alerts */
+  font-size: 14px;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.alert.show {
+  opacity: 1;
+}
+
+.error-message {
+  color: red;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .register-container {
+    padding: 10px;
+  }
+
+  form {
+    padding: 20px;
+  }
+
+  input {
+    font-size: 14px;
+  }
+
+  .register-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  form {
+    padding: 15px;
+  }
+
+  input {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .register-btn {
+    font-size: 12px;
+    padding: 8px;
+  }
+}

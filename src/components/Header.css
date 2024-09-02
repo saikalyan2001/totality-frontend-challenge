@@ -1,0 +1,154 @@
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #003366;
+  color: #FFD700;
+  padding: 1rem 0;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+
+.header-title {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #FFD700;
+}
+
+.header-nav {
+  flex: 1;
+}
+
+.header-list {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+}
+
+.header-item {
+  margin-left: 1rem;
+}
+
+.header-link {
+  color: #FFD700;
+  text-decoration: none;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.header-link::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: #FFD700;
+  width: 0;
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+.header-link:hover::after,
+.header-link.active::after {
+  width: 100%;
+}
+
+.header-link.active {
+  color: #FF7F50;
+  font-weight: bold;
+}
+
+.nav-icon {
+  margin-bottom: 4px;
+  font-size: 24px;
+  color: #FFD700;
+}
+
+.dark-mode .header {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.dark-mode .header-title,
+.dark-mode .header-link,
+.dark-mode .nav-icon {
+  color: #e0e0e0;
+}
+
+.dark-mode .header-link::after {
+  background-color: #e0e0e0;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #FFD700;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .header-nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #003366;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: transform 0.3s ease;
+    transform: translateY(-100%);
+  }
+
+  .header-nav.open {
+    display: block;
+    transform: translateY(0);
+  }
+
+  .header-list {
+    display: block;
+    padding: 1rem;
+    margin: 0;
+  }
+
+  .header-item {
+    margin: 0;
+    text-align: left;
+  }
+
+  .header-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    color: #FFD700;
+    text-decoration: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}

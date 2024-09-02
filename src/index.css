@@ -1,0 +1,12 @@
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  body {
+    padding-top: 100px; /* Adjust this to match the actual height of your fixed header */
+    margin: 0;
+    box-sizing: border-box;
+  }

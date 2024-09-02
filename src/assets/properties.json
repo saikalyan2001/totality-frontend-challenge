@@ -1,0 +1,222 @@
+[
+  {
+    "id": 1,
+    "title": "Beachside Villa",
+    "price": 150,
+    "image": "/assets/beachside_villa.jpg",
+    "description": "A beautiful villa by the beach.",
+    "location": "Malibu",
+    "bedrooms": 3,
+    "amenities": ["Pool", "WiFi"],
+    "reviews": [
+      {
+        "username": "JohnDoe",
+        "rating": 5,
+        "comment": "Amazing place! Will definitely come back."
+      },
+      {
+        "username": "JaneSmith",
+        "rating": 4,
+        "comment": "Great location and amenities, but a bit noisy at night."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Mountain Retreat",
+    "price": 120,
+    "image": "/assets/mountain_retreat.jpg",
+    "description": "A cozy retreat in the mountains.",
+    "location": "Aspen",
+    "bedrooms": 2,
+    "amenities": ["Hot Tub", "Hiking"],
+    "reviews": [
+      {
+        "username": "JohnDoe",
+        "rating": 5,
+        "comment": "Amazing place! Will definitely come back."
+      },
+      {
+        "username": "JaneSmith",
+        "rating": 4,
+        "comment": "Great location and amenities, but a bit noisy at night."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Raj Mahal",
+    "price": 200,
+    "image": "/assets/raj_mahal.jpg",
+    "description": "A majestic palace.",
+    "location": "Jaipur",
+    "bedrooms": 5,
+    "amenities": ["Pool", "WiFi", "Hot Tub"],
+    "reviews": [
+      {
+        "username": "JohnDoe",
+        "rating": 5,
+        "comment": "Amazing place! Will definitely come back."
+      },
+      {
+        "username": "JaneSmith",
+        "rating": 4,
+        "comment": "Great location and amenities, but a bit noisy at night."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "City Apartment",
+    "price": 80,
+    "image": "/assets/city_apartment.jpg",
+    "description": "An apartment in the city center.",
+    "location": "New York",
+    "bedrooms": 1,
+    "amenities": ["WiFi"],
+    "reviews": [
+      {
+        "username": "JohnDoe",
+        "rating": 5,
+        "comment": "Amazing place! Will definitely come back."
+      },
+      {
+        "username": "JaneSmith",
+        "rating": 4,
+        "comment": "Great location and amenities, but a bit noisy at night."
+      }
+    ]
+  },
+    {
+      "id": 5,
+      "title": "Country Cottage",
+      "price": 100,
+      "image": "/assets/image1.jpg",
+      "description": "A charming cottage in the countryside.",
+      "location": "Napa Valley",
+      "bedrooms": 3,
+      "amenities": ["Fireplace", "Garden"],
+      "reviews": [
+        {
+          "username": "EmilyJohnson",
+          "rating": 5,
+          "comment": "A perfect getaway. Loved the fireplace and garden."
+        },
+        {
+          "username": "MichaelBrown",
+          "rating": 4,
+          "comment": "Very cozy, but a bit far from the nearest town."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Urban Loft",
+      "price": 160,
+      "image": "/assets/image2.jpg",
+      "description": "A stylish loft in the heart of the city.",
+      "location": "San Francisco",
+      "bedrooms": 2,
+      "amenities": ["Gym", "WiFi"],
+      "reviews": [
+        {
+          "username": "SarahWhite",
+          "rating": 5,
+          "comment": "Modern and well-equipped. Loved the gym facilities."
+        },
+        {
+          "username": "DavidGreen",
+          "rating": 4,
+          "comment": "Great location and amenities, but a bit noisy due to traffic."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Lake House",
+      "price": 180,
+      "image": "/assets/image3.jpg",
+      "description": "A serene house by the lake.",
+      "location": "Lake Tahoe",
+      "bedrooms": 4,
+      "amenities": ["Fishing", "BBQ Grill"],
+      "reviews": [
+        {
+          "username": "LisaMartin",
+          "rating": 5,
+          "comment": "Fantastic views and perfect for a relaxing vacation."
+        },
+        {
+          "username": "TomWilson",
+          "rating": 4,
+          "comment": "Beautiful house, but the lake could be cleaner."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Desert Oasis",
+      "price": 220,
+      "image": "/assets/image7.jpg",
+      "description": "A luxurious retreat in the desert.",
+      "location": "Sedona",
+      "bedrooms": 3,
+      "amenities": ["Pool", "Spa"],
+      "reviews": [
+        {
+          "username": "KarenClark",
+          "rating": 5,
+          "comment": "Absolutely stunning. The pool and spa were amazing."
+        },
+        {
+          "username": "JamesLewis",
+          "rating": 4,
+          "comment": "Wonderful experience, though a bit remote."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Seaside Cottage",
+      "price": 130,
+      "image": "/assets/image5.jpg",
+      "description": "A quaint cottage by the sea.",
+      "location": "Santa Cruz",
+      "bedrooms": 2,
+      "amenities": ["Beach Access", "WiFi"],
+      "reviews": [
+        {
+          "username": "AnnaDavis",
+          "rating": 5,
+          "comment": "Lovely spot with great beach access."
+        },
+        {
+          "username": "PaulTaylor",
+          "rating": 4,
+          "comment": "Charming cottage, though a bit small for a family."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Modern Cabin",
+      "price": 140,
+      "image": "/assets/image6.jpg",
+      "description": "A sleek cabin with modern amenities.",
+      "location": "Vermont",
+      "bedrooms": 2,
+      "amenities": ["Hot Tub", "Fireplace"],
+      "reviews": [
+        {
+          "username": "RachelHall",
+          "rating": 5,
+          "comment": "The hot tub and fireplace were highlights of our stay."
+        },
+        {
+          "username": "MarkYoung",
+          "rating": 4,
+          "comment": "Beautiful cabin, though the drive up was a bit challenging."
+        }
+      ]
+    }  
+]

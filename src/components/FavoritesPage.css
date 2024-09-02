@@ -1,0 +1,75 @@
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.fav-title {
+  text-align: center;
+  color: #003366;
+  font-size: 2em;
+  font-weight: bold;
+  margin: 20px 0;
+  padding: 10px;
+  border-bottom: 2px solid #FFD700;
+  background-color: #F7F7F7;
+}
+
+.favorites-page {
+  width: 100%;
+  padding: 20px;
+  background-color: #F7F7F7;
+}
+
+.property-card {
+  border: 1px solid #003366;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(33.333% - 20px);
+  box-sizing: border-box;
+}
+
+.property-card h3 {
+  color: #003366;
+}
+
+.property-card p {
+  color: #003366;
+}
+
+.button {
+  background-color: #FF7F50;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #FF6347;
+}
+
+@media (max-width: 1024px) {
+  .property-card {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .property-card {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .fav-title {
+    font-size: 1.5em;
+  }
+
+  .favorites-page {
+    padding: 10px;
+  }
+}
