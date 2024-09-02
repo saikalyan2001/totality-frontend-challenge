@@ -8,14 +8,14 @@
    * User authentication was integrated to handle secure logins and manage user profiles.
    * The platform was designed with responsiveness in mind to ensure it performs well across various devices.
 
-**Tech Stack Details**:
+**`Tech Stack Details`**:
   * React : Used to build the user interface, leveraging React’s component-based architecture to create reusable components and manage state with hooks.
   * React Router: Facilitated navigation between different pages, such as property details and user profiles.
   * CSS: Applied for styling the application, using traditional CSS files for component-specific styles.
   * JSON: Utilized for storing and managing property details. The JSON file serves as a static data source, simplifying data management and allowing for quick
     updates.
 
-**Additional Notes** :
+**`Additional Notes`** :
   * Feature Integration: The platform includes comprehensive features such as a cart and checkout process, a filter bar for search refinements, favorites for
     saving preferred properties, and user profiles with review functionality.
   * User Authentication: Ensures secure user access and management of personal information and bookings.
